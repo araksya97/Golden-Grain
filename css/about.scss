@@ -1,0 +1,41 @@
+.section2 {
+  margin-top: 80px;
+  padding: 0 30px;
+    h3 {
+      line-height: 1.2;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      // font-size: 50px;
+      font-size: calc(34px + 16 * (100vw / 1280));
+      background-image: url(https://content.rolex.com/dam/homepage/banner-push/homepage-day-date-40-m228238-0042-cutout-background.jpg);
+      background-repeat: repeat;
+      background-size: cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-family: "Steelfish Rg", "helvetica neue", helvetica, arial, sans-serif;
+      font-weight: 800;
+      -webkit-font-smoothing: antialiased;
+    }
+    p {
+      font-size: 25px;
+      padding: 40px 0;
+      line-height: 1.2;
+      font-family: "Mulish", sans-serif;
+      color: rgba(0, 0, 0, 0.575);
+    }
+    .btn {
+      width: 180px;
+      font-size: 25px;
+      border-radius: 40px;
+      padding: 15px;
+      border: 2px solid #000;
+      margin-bottom: 20px;
+      text-align: center;
+      
+      &:hover {
+        background: #000;
+      }
+    }
+  }

@@ -1,0 +1,95 @@
+.services_part {
+  background-color: #f8f4f3;
+  padding-bottom: 50px;
+  .title {
+    margin-top: 120px;
+    h6 {
+      color: #b19777;
+      font-weight: 300;
+      font-size: 17px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 10px;
+      text-align: center;
+      padding-top: 100px;
+    }
+    h4 {
+      font-weight: 500;
+      font-size: 40px;
+      letter-spacing: 2px;
+      font-family: "Playfair Display", serif;
+      text-align: center;
+      padding-bottom: 70px;
+    }
+  }
+  .boxes {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(../image/2.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    @media screen and (max-width: 930px){
+      flex-wrap: wrap;
+    }
+    .box {
+      padding: 60px 40px;
+      height: 100%;
+      background-color: #fff;
+      border: 1px solid #eee;
+      transition: all 0.4s;
+      width: 25%;
+      @media screen and (max-width: 930px){
+        width: 50%;
+      }
+      @media screen and (max-width: 510px){
+        width: 100%;
+      }
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+        h2 {
+          color: transparent;
+          transition: 0.2s;
+        }
+        h6 {
+          color: #fff;
+        }
+        a {
+          color: #b19777;
+        }
+      }
+      h2 {
+        font-size: 60px;
+        margin-bottom: 10px;
+        font-family: "Teko", sans-serif;
+        font-weight: 400;
+        -webkit-text-stroke: 1px #b19777;
+        color: #fff;
+      }
+      h6 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 1.4;
+        font-family: "poppins", sans-serif;
+        padding-bottom: 30px;
+      }
+      p {
+        color: #8a8a8a;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 2;
+        font-family: "poppins", sans-serif;
+        padding-bottom: 20px;
+      }
+      a {
+        color: #191514;
+        font-size: 20px;
+        font-weight: 600;
+        font-family: "Teko", sans-serif;
+        text-decoration: none;
+        background-color: transparent;
+      }
+    }
+  }
+}
+

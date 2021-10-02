@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "HelvaticaBold";
+  src: url("../fonts/Helvetica/HelveticaNowText-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "HelvaticaLight";
+  src: url("../fonts/Helvetica/HelveticaNowText-Light.ttf") format("ttf");
+}
+@font-face {
+  font-family: "SteelfishReg";
+  src: url("../fonts/Steelfish/steelfish\ rg.ttf") format("ttf");
+}
+@font-face {
+  font-family: "SteelfishBold";
+  src: url("../fonts/Steelfish/steelfish\ bd.ttf") format("ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Teko:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;600;900&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  @media screen and (max-width: 1310px) {
+    padding: 0 30px;
+  }
+}
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* swiper */
+.swiper-header {
+  width: 100%;
+}
+
+.swiper-header .swiper-slide {
+  background-position: center;
+  background-size: cover;
+
+  height: 500px;
+}
+
+.section1 {
+  position: relative;
+  .section1_inner {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-image: url(../image/SL_101619_24150_09.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    color: #fff;
+    font-family: "Mulish", sans-serif;
+    margin-bottom: 50px;
+    .sec1_title {
+      width: 50%;
+      position: absolute;
+      top: 50%;
+      left: 75%;
+      transform: translate(-50%, -75%);
+      font-size: 35px;
+
+      @media screen and (max-width: 900px) {
+        width: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 25px;
+      }
+      h3 {
+        font-size: 55px;
+        @media screen and (max-width: 500px) {
+          font-size: 40px;
+        }
+      }
+      .btn {
+        margin: 20px 0;
+        a {
+          font-family: "Mulish", sans-serif;
+          text-decoration: none;
+          display: inline-block;
+          padding: 13px 30px;
+          transition: all 0.3s ease;
+          border: 2px solid #017c7e;
+          border-radius: 50px;
+          color: #fff;
+          font-size: 24px;
+          &:hover {
+            background: #017c7e;
+          }
+        }
+
+      }
+    }
+  }
+}
+.button > a {
+  color: #f8f9fa;
+  font-family: "Mulish", sans-serif;
+  text-decoration-line: none;
+  display: inline-block;
+  padding: 13px 50px;
+  transition: all 0.3s ease;
+  border: 2px solid #000;
+  background: #000;
+  border-radius: 50px;
+}
+
+.button > a:hover {
+  background: #fff;
+  color: #000;
+}
+.for_bg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Lovers Quarrel', cursive;
+  font-size: 146px;
+  line-height: 54px;
+  color: #fff;
+  letter-spacing: 4px;
+  @media screen and (max-width: 1070px) {
+    font-size: 126px;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 86px;
+  }
+  h2{
+    font-family: 'EB Garamond', serif;
+    font-size: 60px;
+    line-height: 85px;
+    font-weight: 400;
+    // padding-bottom: 15px ;
+    letter-spacing: 15px;
+    border-bottom: 3px solid #fff;
+    text-transform: uppercase;
+  }
+}
+@import "menu.scss","main.scss","nav.scss", "footer.scss", "about.scss", "services.scss", "team.scss",
+  "contact.scss";
