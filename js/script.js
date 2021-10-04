@@ -4,13 +4,13 @@ const swiper = new Swiper('.slide', {
   pagination: {
     el: '.swiper-pagination',
   },
-  slidesPerView: 4,
+  slidesPerView: 1,
   spaceBetween: 20,
   breakpoints: {
-    220: {
+    420: {
       slidesPerView: 2,
     },
-    550: {
+    700: {
       slidesPerView: 3,
     },
     1080: {
@@ -24,16 +24,21 @@ const swiperHeader = new Swiper('.swiper-header', {
   effect: "coverflow",
   grabCursor: true,
   centeredSlides: true,
-  slidesPerView: 3,
+  slidesPerView: 1,
+  breakpoints: {
+    100: {
+      slidesPerView: 1,
+    },
+    550: {
+      slidesPerView: 3,
+    },
+  },
   coverflowEffect: {
     rotate: 50,
     stretch: 0,
     depth: 100,
     modifier: 1,
     slideShadows: true,
-  },
-  pagination: {
-    el: ".swiper-pagination",
   },
   
 });

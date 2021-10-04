@@ -45,13 +45,19 @@ img {
 /* swiper */
 .swiper-header {
   width: 100%;
+  padding: 0 30px;
 }
 
 .swiper-header .swiper-slide {
-  background-position: center;
-  background-size: cover;
-
-  height: 500px;
+  height: 550px;
+  margin: 40px 0; 
+  @media screen and (max-width: 1080px) {
+    height: 45vw;
+  }
+  @media screen and (max-width: 550px) {
+    height: 60vw;
+    margin: 0;
+  }
 }
 
 .section1 {
