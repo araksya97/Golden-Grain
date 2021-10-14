@@ -45,3 +45,4 @@ const swiperHeader = new Swiper('.swiper-header', {
 $(".mobile_btn").on("click", function () {
   $(".nav_menu").toggleClass("active");
 });
+

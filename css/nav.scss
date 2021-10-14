@@ -12,6 +12,7 @@ nav {
     align-items: center;
     padding: 0 30px;
     .logo {
+      padding-top: 30px;
       height: 160px;
       max-width: 170px;
     }
@@ -43,6 +44,11 @@ nav {
           &::before {
             background-color: #000;
             animation: animateLine 1s;
+          }
+        }
+        .active{
+          &::before {
+            background-color: #000;
           }
         }
       }

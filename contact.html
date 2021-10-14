@@ -14,13 +14,14 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="shortcut icon" href="img/logo.jpg" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
       <nav>
         <section class="nav container">
-          <a  class="logo" href="./index.html"><img src="./img/logo.jpg" alt="" /></a>
+          <a  class="logo" href="./index.html"><img src="./img/logo.png" alt="" /></a>
 
           <div class="mobile_btn">
             <i class="fas fa-bars"></i>
@@ -29,7 +30,7 @@
             <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="./about.html">About us</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
+            <li><a class="active" href="./contact.html">Contact us</a></li>
           </ul>
         </section>
       </nav>
@@ -48,19 +49,18 @@
       </div>
       <div class="contact">
         <div class="left">
-          <form action="">
-            <input type="text" placeholder="Name" />
-            <input type="mail" placeholder="Email" />
+          <form action="https://formsubmit.co/baraqsya@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://goldengrainbakehouseandcafe.com/">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
             <textarea
-              name=""
+              name="message"
               id=""
-              cols="30"
+              cols="15"
               rows="10"
               placeholder="Message"
             ></textarea>
-            <div class="button">
-              <a href="">Send Message</a>
-            </div>
+              <button type="submit">Send Message</button >
           </form>
         </div>
         <div class="right_map">
@@ -77,14 +77,20 @@
       <div class="container">
         <div class="foot_first">
           <a class="logo" href="./index.html">
-            <img src="./img/logo.jpg" alt="" />
+            <img src="./img/logo.png" alt="" />
           </a>
 
           <ul>
+            <li><div class="footer__icons">
+              <a href="https://www.facebook.com/goldengrainla" target="_blank"><i class="fa fa-facebook"
+                      aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/goldengrain_la/?hl=en" target="_blank"><i class="fa fa-instagram"
+                      aria-hidden="true"></i></a>
+          </div></li>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="./about.html">About us</a></li>
-            <li><a href="./contact.html">Contact us</a></li>
+            
           </ul>
         </div>
         <ul class="footer_cont">

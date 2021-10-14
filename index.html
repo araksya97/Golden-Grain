@@ -14,19 +14,20 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="shortcut icon" href="img/logo.jpg" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <nav>
       <section class="nav container">
         <a class="logo" href="./index.html">
-          <img src="./img/logo.jpg" alt="" />
+          <img src="./img/logo.png" alt="" />
         </a>
         <div class="mobile_btn">
           <i class="fas fa-bars"></i>
         </div>
         <ul class="nav_menu">
-          <li><a href="./index.html">Home</a></li>
+          <li><a class="active" href="./index.html">Home</a></li>
           <li><a href="./menu.html">Menu</a></li>
           <li><a href="./about.html">About us</a></li>
           <li><a href="./contact.html">Contact us</a></li>
@@ -57,12 +58,18 @@
       </div>
     </div>
 
-    <section id="about" class="section2 sec2_hp container">
-      <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</h3>
+    <section class="section2 sec2_hp container">
+      <h3>
+        Golden grain
+        <br />
+        Bake house & cafe
+      </h3>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quidem
-        reprehenderit inventore provident, asperiores atque esse rem nisi quis
-        aliquam?
+        Golden Grain Bakery and Cafe opened its doors in 2008 in the heart of
+        Glendale and since that time, it continues to delight the customers with
+        delicious, healthy food and the aroma of invigorating coffee. Once you
+        get inside the bakery and feel the cozy atmosphere, Golden Grain will
+        become your favorite place to spend your time with...
       </p>
       <div class="button">
         <a href="./about.html">Read more</a>
@@ -87,11 +94,11 @@
               <img src="./img/image2.jpeg" alt="" />
             </a>
           </div>
-            <div class="swiper-slide">
-              <a href="./menu.html" class="image">
-                <img src="./img/image3.jpeg" alt="" />
-              </a>
-            </div>
+          <div class="swiper-slide">
+            <a href="./menu.html" class="image">
+              <img src="./img/image3.jpeg" alt="" />
+            </a>
+          </div>
           <div class="swiper-slide">
             <a href="./menu.html" class="image">
               <img src="./img/1.jpg" alt="" />
@@ -127,66 +134,94 @@
               <img src="./img/6.jpg" alt="" />
             </a>
           </div>
-          <div class="swiper-slide">
-            <a href="./menu.html" class="image">
-              <img src="./img/7.jpg" alt="" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="./menu.html" class="image">
-              <img src="./img/9.jpg" alt="" />
-            </a>
-          </div>
-          <div class="swiper-slide">
-            <a href="./menu.html" class="image">
-              <img src="./img/10.jpg" alt="" />
-            </a>
-          </div>
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </section>
-
+    <section class="delivery_takeaway">
+      <div class="container">
+        <div class="img_del"><img src="./img/delivery.png" alt="" /></div>
+        <div class="dew_take">
+        <div class="takeaway">
+          <h3>Takeaway</h3>
+          <p>
+            If you are not able to spend your time in our cozy bakery, choose
+            takeaway and enjoy your meal in the comfort of your own.
+          </p>
+          </div>
+          <div class="delivery">
+          <h3>Delivery</h3>
+          <p>
+            Get your food delivered at your door steps. Save time with our
+            delivery service.
+          </p>
+        </div>
+      </div>
+        
+      </div>
+    </section>
     <section id="contact" class="contact_us home_contact_us">
       <div class="container">
         <div class="contact home_contact">
           <h3>Get in touch</h3>
           <div class="left">
-            <form action="">
-              <input type="text" placeholder="Name" />
-              <input type="mail" placeholder="Email" />
+            <form
+              action="https://formsubmit.co/baraqsya@gmail.com"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="_next"
+                value="https://goldengrainbakehouseandcafe.com/"
+              />
+              <input type="text" name="name" placeholder="Name" required />
+              <input type="email" name="email" placeholder="Email" required />
               <textarea
-                name=""
+                name="message"
                 id=""
                 cols="15"
                 rows="10"
                 placeholder="Message"
               ></textarea>
-              <div class="button">
-                <a href="">Send Message</a>
-              </div>
+
+              <button type="submit">Send Message</button>
             </form>
           </div>
-          
         </div>
         <div class="right">
-          Our Team
-          Get in touch with us and let us help create memories together.
+          Our Team Get in touch with us and let us help create memories
+          together.
           <div class="text">
             Please fill out the form on this section to contact with me. Or call
             between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday
-          </div>          </div>
+          </div>
+        </div>
       </div>
     </section>
     <footer>
       <div class="container">
         <div class="foot_first">
           <a class="logo" href="./index.html">
-            <img src="./img/logo.jpg" alt="" />
+            <img src="./img/logo.png" alt="" />
           </a>
 
           <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li>
+              <div class="footer__icons">
+                <a
+                  href="https://www.facebook.com/goldengrainla"
+                  target="_blank"
+                >
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a
+                  href="https://www.instagram.com/goldengrain_la/?hl=en"
+                  target="_blank"
+                >
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </li>
             <li><a href="./menu.html">Menu</a></li>
             <li><a href="./about.html">About us</a></li>
             <li><a href="./contact.html">Contact us</a></li>
@@ -196,19 +231,26 @@
           <li class="first">
             <div class="name_part">Email</div>
             <div class="cont_part">
-              <a href="mailto: info@goldengrainbakehouseandcafe.com">info@goldengrainbakehouseandcafe.com</a>
+              <a
+                href="mailto: info@goldengrainbakehouseandcafe.com"
+                target="_blank"
+              >
+                info@goldengrainbakehouseandcafe.com
+              </a>
             </div>
           </li>
           <li>
             <div class="name_part">Address</div>
             <div class="cont_part">
-              <a href="">1117 S Glendale Ave Glendale, CA 91205</a>
+              <a href="https://goo.gl/maps/mraEAgrnRnabV3i96" target="_blank">
+                1117 S Glendale Ave Glendale, CA 91205
+              </a>
             </div>
           </li>
           <li class="last">
             <div class="name_part">Phone</div>
             <div class="cont_part">
-              <a href="tel:(818)245-6025">(818)245-6025</a>
+              <a href="tel:(818)245-6025" target="_blank">(818)245-6025</a>
             </div>
           </li>
         </ul>

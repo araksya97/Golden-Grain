@@ -116,6 +116,33 @@ img {
     }
   }
 }
+.delivery_takeaway{
+  height: 500px;
+  background-color: rgb(253, 239, 253);
+  font-family: "Mulish", sans-serif;
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .img_del{
+      max-width: 500px;
+      width: 50%;
+    }
+    .dew_take{
+      width: 45%;
+    }
+    .takeaway{
+      text-align: end;
+      padding-bottom: 30px;
+    }
+    h3{
+      font-size: 30px;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+}
 .button > a {
   color: #f8f9fa;
   font-family: "Mulish", sans-serif;
